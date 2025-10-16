@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:it_legend_task/core/constants/AppColor.dart';
+import 'package:it_legend_task/core/constants/App_Router.dart/routes.dart';
 import 'package:it_legend_task/features/view/Tabbar_Pageview.dart/all_offers.dart';
-import 'package:it_legend_task/features/view/fliteration_page.dart';
 import 'package:it_legend_task/features/widget/TabItemCard.dart';
 
 class HomePage extends StatelessWidget {
@@ -32,11 +32,9 @@ class HomePage extends StatelessWidget {
                         ),
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
+                            Navigator.pushNamed(
                               context,
-                              MaterialPageRoute(
-                                builder: (context) => FliterationPage(),
-                              ),
+                              Routes.FliterationPageroutName,
                             );
                           },
                           child: Text('الكل', style: texttheme.titleLarge),

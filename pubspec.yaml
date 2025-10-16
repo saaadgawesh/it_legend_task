@@ -26,9 +26,20 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
-
+  fonts:
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Regular.ttf
+        - asset: assets/fonts/Tajawal-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Tajawal-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Tajawal-ExtraBold.ttf
+          weight: 800
   assets:
     - assets/images/
     - assets/NavIcons/
     - assets/products/
-    - assets/cars/
+    - assets/fonts/

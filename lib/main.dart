@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:it_legend_task/core/constants/AppTextThem.dart';
+import 'package:it_legend_task/core/constants/App_Router.dart/Generate_route.dart';
 import 'package:it_legend_task/features/Data/Category/category_cubit.dart';
 import 'package:it_legend_task/features/Data/Products/product_cubit.dart';
 import 'package:it_legend_task/features/Data/models/Category_Model.dart';
@@ -59,6 +60,7 @@ class ItLegendTask extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: const Navbarscreen(),
       theme: Apptextthem.appTextthem,
+      onGenerateRoute: GenerateRoute.onGenerateRoute,
     );
   }
 }

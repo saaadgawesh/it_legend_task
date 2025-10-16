@@ -2,13 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:it_legend_task/features/Data/models/Product_Model.dart';
 
 class ProductItemCard extends StatelessWidget {
-  const ProductItemCard({super.key, required this.index, required this.product});
-   final ProductModel product;
+  const ProductItemCard({
+    super.key,
+    required this.index,
+    required this.product,
+  });
+  final ProductModel product;
   final int index;
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 200,
+      width: 210,
       height: 300,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(4),
@@ -17,14 +21,10 @@ class ProductItemCard extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            width: 158,
+            width: 180,
             height: 215,
 
-            child: Image.asset(
-            product.image,
-              fit: BoxFit.cover,
-              width: 180,
-            ),
+            child: Image.asset(product.image, fit: BoxFit.cover, width: 185),
           ),
 
           Row(
@@ -32,8 +32,9 @@ class ProductItemCard extends StatelessWidget {
             children: [
               Image.asset((product.icontitle)),
               Text(
-              product.title,
+                product.title,
                 overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontSize: 12),
               ),
             ],
           ),
@@ -62,10 +63,7 @@ class ProductItemCard extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              Text(
-              product.text,
-                overflow: TextOverflow.ellipsis,
-              ),
+              Text(product.text, overflow: TextOverflow.ellipsis),
 
               Image.asset((product.icontext)),
             ],
@@ -80,7 +78,6 @@ class ProductItemCard extends StatelessWidget {
               Image.asset((product.companybadgeicon)),
             ],
           ),
-
         ],
       ),
     );
