@@ -16,16 +16,10 @@ class categoryModel {
   }
 }
 
-class CategoryItemModel {
-  CategoryItemModel({required this.image, required this.text});
-  final String image;
-  final String text;
-}
+List<categoryModel> categoryItemModel = [
+  categoryModel(image: images.categorymakeup, text: 'منتجات تجميل'),
+  categoryModel(image: images.categoryphone, text: 'موبايلات'),
+  categoryModel(image: images.categoryhour, text: 'ساعات'),
 
-List<CategoryItemModel> categoryItemModel = [
-  CategoryItemModel(image: images.categorymakeup, text: 'منتجات تجميل'),
-  CategoryItemModel(image: images.categoryphone, text: 'موبايلات'),
-  CategoryItemModel(image: images.categoryhour, text: 'ساعات'),
-
-  CategoryItemModel(image: images.categoryperson, text: 'موضة رجالى'),
+  categoryModel(image: images.categoryperson, text: 'موضة رجالى'),
 ];

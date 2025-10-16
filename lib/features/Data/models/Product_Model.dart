@@ -1,4 +1,5 @@
 import 'package:it_legend_task/core/constants/Asset.dart';
+
 class ProductModel {
   final String image;
   final String title;
@@ -59,35 +60,8 @@ class ProductModel {
   }
 }
 
-class productitemModel {
-  productitemModel({
-    required this.image,
-    required this.title,
-    required this.icontitle,
-    required this.price,
-    required this.iconprice,
-    required this.offerprice,
-    required this.carticon,
-    required this.talatmostafaicon,
-    required this.companybadgeicon,
-    required this.text,
-    required this.icontext,
-  });
-  final String image;
-  final String title;
-  final String text;
-  final String icontext;
-  final String icontitle;
-  final String price;
-  final String iconprice;
-  final String offerprice;
-  final String carticon;
-  final String talatmostafaicon;
-  final String companybadgeicon;
-}
-
-List<productitemModel> productitemModels = [
-  productitemModel(
+List<ProductModel> productitemModels = [
+  ProductModel(
     image: Products.tshirt,
     title: 'جاكيت من الصوف مناسب',
     icontitle: Products.vector,
@@ -100,7 +74,7 @@ List<productitemModel> productitemModels = [
     text: 'تم بيع 3.3k+',
     icontext: Products.localfiredepartment,
   ),
-  productitemModel(
+  ProductModel(
     image: Products.jaket,
     title: 'جاكيت من الصوف مناسب',
     icontitle: Products.vector,
@@ -113,7 +87,7 @@ List<productitemModel> productitemModels = [
     text: 'تم بيع 3.3k+',
     icontext: Products.localfiredepartment,
   ),
-  productitemModel(
+  ProductModel(
     image: Products.jaket,
     title: 'جاكيت من الصوف مناسب',
     icontitle: Products.vector,
@@ -126,7 +100,7 @@ List<productitemModel> productitemModels = [
     text: 'تم بيع 3.3k+',
     icontext: Products.localfiredepartment,
   ),
-  productitemModel(
+  ProductModel(
     image: Products.jaket,
     title: 'جاكيت من الصوف مناسب',
     icontitle: Products.vector,
@@ -139,7 +113,7 @@ List<productitemModel> productitemModels = [
     text: 'تم بيع 3.3k+',
     icontext: Products.localfiredepartment,
   ),
-  productitemModel(
+  ProductModel(
     image: Products.jaket,
     title: 'جاكيت من الصوف مناسب',
     icontitle: Products.vector,
@@ -152,7 +126,7 @@ List<productitemModel> productitemModels = [
     text: 'تم بيع 3.3k+',
     icontext: Products.localfiredepartment,
   ),
-  productitemModel(
+  ProductModel(
     image: Products.shoes,
     title: 'جاكيت من الصوف مناسب',
     icontitle: Products.vector,
@@ -165,7 +139,7 @@ List<productitemModel> productitemModels = [
     text: 'تم بيع 3.3k+',
     icontext: Products.localfiredepartment,
   ),
-  productitemModel(
+  ProductModel(
     image: Products.jaket,
     title: 'جاكيت من الصوف مناسب',
     icontitle: Products.vector,
@@ -178,7 +152,7 @@ List<productitemModel> productitemModels = [
     text: 'تم بيع 3.3k+',
     icontext: Products.localfiredepartment,
   ),
-  productitemModel(
+  ProductModel(
     image: Products.shoes,
     title: 'جاكيت من الصوف مناسب',
     icontitle: Products.vector,

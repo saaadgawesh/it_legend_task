@@ -56,6 +56,13 @@ class CreateAdPackageItem extends StatelessWidget {
     required this.textTheme,
   });
 
+  Color? _getTitleColor(String title) {
+    if (title.toLowerCase() == 'اكسترا' || title.toLowerCase() == 'بلس') {
+      return Appcolor.bluecolor;
+    }
+    return null;
+  }
+
   String getStackNumber() {
     if (item.stacktext == '7') {
       return '7';
@@ -93,7 +100,13 @@ class CreateAdPackageItem extends StatelessWidget {
                       ),
                     ),
                     const Spacer(),
-                    Text(item.title, style: textTheme.titleLarge),
+                    Text(
+                      item.title,
+                      style: textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: _getTitleColor(item.title),
+                      ),
+                    ),
                     Image.asset(item.titleImage),
                   ],
                 ),
@@ -214,6 +227,7 @@ class CreateAdPackageItem extends StatelessWidget {
           ),
         );
       }
+
       if (item.tathbeet2 != null) {
         widgets.add(
           Padding(

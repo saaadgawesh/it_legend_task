@@ -32,7 +32,6 @@ Flutter 3.x or the stable version you are using.
 
 Android/iOS emulator or a physical device.
 
-Firebase (if the project uses Authentication or Firestore).
 
 Screenshots (Optional)
 
